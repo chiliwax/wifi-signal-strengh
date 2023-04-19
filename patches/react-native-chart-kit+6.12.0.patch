@@ -1,0 +1,70 @@
+diff --git a/node_modules/react-native-chart-kit/dist/line-chart/LineChart.d.ts b/node_modules/react-native-chart-kit/dist/line-chart/LineChart.d.ts
+index e09cf18..e735d08 100644
+--- a/node_modules/react-native-chart-kit/dist/line-chart/LineChart.d.ts
++++ b/node_modules/react-native-chart-kit/dist/line-chart/LineChart.d.ts
+@@ -189,12 +189,14 @@ export interface LineChartProps extends AbstractChartProps {
+ }
+ declare type LineChartState = {
+     scrollableDotHorizontalOffset: Animated.Value;
++    dotsLocation: object
+ };
+ declare class LineChart extends AbstractChart<LineChartProps, LineChartState> {
+     label: React.RefObject<TextInput>;
+     state: {
+         scrollableDotHorizontalOffset: Animated.Value;
+     };
++    getDotsInfo: () => any
+     getColor: (dataset: Dataset, opacity: number) => string;
+     getStrokeWidth: (dataset: Dataset) => number;
+     getDatas: (data: Dataset[]) => number[];
+diff --git a/node_modules/react-native-chart-kit/dist/line-chart/LineChart.js b/node_modules/react-native-chart-kit/dist/line-chart/LineChart.js
+index 1ac4227..709095f 100644
+--- a/node_modules/react-native-chart-kit/dist/line-chart/LineChart.js
++++ b/node_modules/react-native-chart-kit/dist/line-chart/LineChart.js
+@@ -40,8 +40,13 @@ var LineChart = /** @class */ (function (_super) {
+     function LineChart() {
+         var _this = _super !== null && _super.apply(this, arguments) || this;
+         _this.label = React.createRef();
++        _this.dotsInfo = []
++        _this.getDotsInfo = function () {
++            return _this.dotsInfo
++        }
+         _this.state = {
+-            scrollableDotHorizontalOffset: new Animated.Value(0)
++            scrollableDotHorizontalOffset: new Animated.Value(0),
++            dotsLocation: ["hello"]
+         };
+         _this.getColor = function (dataset, opacity) {
+             return (dataset.color || _this.props.chartConfig.color)(opacity);
+@@ -61,7 +66,7 @@ var LineChart = /** @class */ (function (_super) {
+             return __assign({ r: "4" }, propsForDots);
+         };
+         _this.renderDots = function (_a) {
+-            var data = _a.data, width = _a.width, height = _a.height, paddingTop = _a.paddingTop, paddingRight = _a.paddingRight, onDataPointClick = _a.onDataPointClick;
++            var data = _a.data, width = _a.width, height = _a.height, paddingTop = _a.paddingTop, paddingRight = _a.paddingRight, onDataPointClick = _a.onDataPointClick, dotsLocation = _a.dotsLocation ;
+             var output = [];
+             var datas = _this.getDatas(data);
+             var baseHeight = _this.calcBaseHeight(datas, height);
+@@ -69,9 +74,12 @@ var LineChart = /** @class */ (function (_super) {
+                 return null;
+             } : _d;
+             var xMax = _this.getXMaxValues(data);
++            _this.dotsInfo = []
++            //_this.setState({dotsLocation: []})
+             data.forEach(function (dataset) {
+                 if (dataset.withDots == false)
+                     return;
++                
+                 dataset.data.forEach(function (x, i) {
+                     if (hidePointsAtIndex.includes(i)) {
+                         return;
+@@ -79,6 +87,9 @@ var LineChart = /** @class */ (function (_super) {
+                     var cx = paddingRight + (i * (width - paddingRight)) / xMax;
+                     var cy = ((baseHeight - _this.calcHeight(x, datas, height)) / 4) * 3 +
+                         paddingTop;
++                    _this.dotsInfo.push({value:x, x: cx, y:cy})
++                    
++                   // _this.setState({dotsLocation: dotsLocation ? [...dotsLocation, {value:x, x: cx, y:cy}] : [{value:x, x: cx, y:cy}]})
+                     var onPress = function () {
+                         if (!onDataPointClick || hidePointsAtIndex.includes(i)) {
+                             return;
