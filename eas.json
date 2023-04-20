@@ -12,7 +12,8 @@
     },
     "production": {
       "android": {
-        "autoIncrement": "versionCode"
+        "autoIncrement": "versionCode",
+        "distribution": "production"
       }
     }
   },
