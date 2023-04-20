@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "signalstrengh",
+    "name": "Wifi Signal Strengh",
     "slug": "signalstrengh",
-    "version": "1.0.2",
+    "version": "1.0.3",
     "orientation": "portrait",
     "icon": "./assets/rocket_logo.png",
     "userInterfaceStyle": "light",
@@ -23,7 +23,7 @@
         "backgroundColor": "#1C1C1C"
       },
       "package": "com.chiliwa.signalstrengh",
-      "versionCode": 3
+      "versionCode": 7
     },
     "web": {
       "favicon": "./assets/favicon.png"
