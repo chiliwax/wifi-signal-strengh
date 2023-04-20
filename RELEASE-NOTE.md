@@ -1,4 +1,5 @@
 # Release Note -  current (no tags)  - 20 April 2023
+- feat: adding release note [`e430e3a`](https://github.com/chiliwax/wifi-signal-strengh/commit/e430e3abe75f8a2efc227b246bfa1a333c7f964f)
 - fix: update auto-changelog [`ecdddaf`](https://github.com/chiliwax/wifi-signal-strengh/commit/ecdddaffcadb42e29bbd747506c151bdf83fb780)
 - test [`a093996`](https://github.com/chiliwax/wifi-signal-strengh/commit/a09399650cb1e7531e99f170a64a78af9b6529d1)
 - feat: autochangelog [`93c7063`](https://github.com/chiliwax/wifi-signal-strengh/commit/93c706344b6c6e985b1fc5ca07a9d52d8d125483)

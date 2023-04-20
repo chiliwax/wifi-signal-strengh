@@ -1,0 +1,7 @@
+{
+  "output": "RELEASE-NOTE.html",
+  "template": "autochangelog/releasenote_html.hbs",
+  "unreleased": false,
+  "commitLimit": false,
+  "sortCommits": "date-desc"
+}

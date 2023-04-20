@@ -9,7 +9,7 @@
     "web": "expo start --web",
     "postinstall": "patch-package",
     "changelog": "auto-changelog -p -c ./autochangelog/.changelog-config",
-    "releasenote": "auto-changelog -p -c ./autochangelog/.release-note-config",
+    "releasenote": "auto-changelog -p -c ./autochangelog/.release-note-config && auto-changelog -p -c ./autochangelog/.release-note-config-html",
     "publish": "ts-node --project ./scripts/publish/publish.tsconfig.json ./scripts/publish/publish.mts"
   },
   "dependencies": {
