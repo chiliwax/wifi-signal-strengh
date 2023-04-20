@@ -42,7 +42,7 @@
   "auto-changelog": {
     "output": "CHANGELOG.md",
     "template": ".changelog-template/template.hbs",
-    "unreleased": false,
+    "unreleased": true,
     "commitLimit": false
   },
 	"private": true
