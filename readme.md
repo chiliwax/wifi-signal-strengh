@@ -1,8 +1,8 @@
 # Wifi Signal Strengh
 
-<div style="display: flex; justify-content: center">
+<p align="center">
 <img src="doc/images/signal-strength.png" alt="banner" height="300px"/>
-</div>
+</p>
 
 ## Stack
 
@@ -43,7 +43,7 @@ npm run publish
 
 ## Showcase
 
-<div style="display: flex; justify-content: center; gap: 30px">
+<div align="center">
 <img src="doc/images/Screenshot_20230419-191004_signalstrengh.jpg" alt="banner" width="30%"/>
 <img src="doc/images/Screenshot_20230419-191047_signalstrengh.jpg" alt="banner" width="30%"/>
 </div>
