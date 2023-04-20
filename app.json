@@ -22,7 +22,8 @@
         "foregroundImage": "./assets/rocket_logo.png",
         "backgroundColor": "#1C1C1C"
       },
-      "package": "com.chiliwa.signalstrengh"
+      "package": "com.chiliwa.signalstrengh",
+      "versionCode": 3
     },
     "web": {
       "favicon": "./assets/favicon.png"
