@@ -13,7 +13,7 @@
     "production": {
       "android": {
         "autoIncrement": "versionCode",
-        "distribution": "production"
+        "distribution": "store"
       }
     }
   },
