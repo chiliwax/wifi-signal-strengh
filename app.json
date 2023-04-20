@@ -21,10 +21,17 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/rocket_logo.png",
         "backgroundColor": "#1C1C1C"
-      }
+      },
+      "package": "com.chiliwa.signalstrengh"
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    }
+    },
+    "extra": {
+      "eas": {
+        "projectId": "ba9e9495-6b84-474f-9ee8-e6d594f233b3"
+      }
+    },
+    "owner": "chiliwa"
   }
 }
