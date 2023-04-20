@@ -21,6 +21,7 @@ This app allow to see the signal strengh of a wifi connexion. Its available only
 
 ```sh
 npm i
+npm run postinstall
 npm start
 ```
 
