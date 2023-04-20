@@ -1,7 +1,7 @@
 import { Pressable, Text as NativeText } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import Ionicons from '@expo/vector-icons/Ionicons';
-import { useContext, useEffect, useState } from 'react';
+import { useCallback, useContext, useEffect, useState } from 'react';
 import { ThemeContext } from '../../contexts/theme.context';
 import { useThemeButtonStyle } from './ThemeButton.design';
 
@@ -50,8 +50,10 @@ export const ThemeButton: React.FC = (): JSX.Element => {
     }
   };
 
+  const toogleThemeCallback = useCallback(toogleTheme, [theme]);
+
   return (
-    <Pressable onPress={toogleTheme}>
+    <Pressable onPress={toogleThemeCallback} hitSlop={20}>
       <Ionicons name={icon} size={ICON_SIZE} color={design.svg.color} />
     </Pressable>
   );
