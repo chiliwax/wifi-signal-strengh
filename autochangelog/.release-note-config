@@ -1,0 +1,7 @@
+{
+    "output": "RELEASE-NOTE.md",
+    "template": "autochangelog/releasenote.hbs",
+    "unreleased": true,
+    "commitLimit": false,
+	"sortCommits": "date-desc"
+  }

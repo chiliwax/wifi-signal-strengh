@@ -8,7 +8,8 @@
     "ios": "expo start --ios",
     "web": "expo start --web",
     "postinstall": "patch-package",
-    "changelog": "auto-changelog -p",
+    "changelog": "auto-changelog -p -c ./autochangelog/.changelog-config",
+    "releasenote": "auto-changelog -p -c ./autochangelog/.release-note-config",
     "publish": "ts-node --project ./scripts/publish/publish.tsconfig.json ./scripts/publish/publish.mts"
   },
   "dependencies": {
@@ -38,13 +39,6 @@
     "fs-extra": "^11.1.1",
     "inquirer": "^9.1.5",
     "ts-node": "^10.9.1"
-  },
-  "auto-changelog": {
-    "output": "CHANGELOG.md",
-    "template": ".changelog-template/template.hbs",
-    "unreleased": true,
-    "commitLimit": false,
-	"sortCommits": "date-desc"
   },
   "private": true
 }

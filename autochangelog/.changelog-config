@@ -1,0 +1,7 @@
+{
+  "output": "CHANGELOG.md",
+  "template": "autochangelog/changelog.hbs",
+  "unreleased": true,
+  "commitLimit": false,
+  "sortCommits": "date-desc"
+}
