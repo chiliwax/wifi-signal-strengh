@@ -6,12 +6,16 @@
 
 ## Stack
 
+<div align="center">
+
 ![Node.js](https://img.shields.io/static/v1?style=for-the-badge&message=Node.js&color=339933&logo=Node.js&logoColor=FFFFFF&label=16.19)
 ![React](https://img.shields.io/static/v1?style=for-the-badge&message=React&color=222222&logo=React&logoColor=61DAFB&label=18.2)
 ![React Native](https://img.shields.io/static/v1?style=for-the-badge&message=React%20Native&color=222222&logo=React&logoColor=61DAFB&label=71.6)
 ![Expo](https://img.shields.io/static/v1?style=for-the-badge&message=Expo&color=000020&logo=Expo&logoColor=FFFFFF&label=SDK%2048)
 ![Expo](https://img.shields.io/static/v1?style=for-the-badge&message=Expo%20EAS&color=000020&logo=Expo&logoColor=FFFFFF&label=)
 ![TypeScript](https://img.shields.io/static/v1?style=for-the-badge&message=TypeScript&color=3178C6&logo=TypeScript&logoColor=FFFFFF&label=4.9)
+
+</div>
 
 ## Intro 
 
