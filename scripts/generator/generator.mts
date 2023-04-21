@@ -8,10 +8,6 @@ const createFile = (filePath: string, content: string) => {
   fs.writeFileSync(filePath, content, { encoding: 'utf-8' })
 }
 
-const formatFilePath = () => {
-
-}
-
 const main = async () => {
   //Inquirer
   const fileQuestion = await inquirer.prompt<{ rootDirectory: string, name: string }>(

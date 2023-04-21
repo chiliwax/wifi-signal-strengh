@@ -13,19 +13,20 @@
     <img src="./banner.png" alt="" height="100px">
     <div
         style="background-color: beige; width: 80%; border-radius: 2rem; padding: 2rem; justify-content: center; align-items: center; text-align: center; text-transform: uppercase; ">
-        <div style="font-size: 1.2rem; font-weight: bold;">Signal Strengh V{{version}}</div> <br />
+        <div style="font-size: 1.2rem; font-weight: bold;">{{projectName}} V{{version}}</div> <br />
         <div style="text-transform: capitalize;"> Internal release !</div>
     </div>
     <br />
     <div style="background-color: beige; width: 80%; border-radius: 2rem; min-height: 10rem; padding: 2rem;">
         <p>Hello There !</p><br />
-        <p>The new version {{version}} of Signal Strengh is available</p><br /><br />
+        <p>The new version {{version}} of {{projectName}} is available</p><br /><br />
 
-         <a style="background-color: #263135; border-radius: .5rem; padding: 1rem; display: flex; justify-content: center; align-items: center; color: white !important; outline: none; text-decoration: none;" href="">Download It Now</a><br /><br />
+         <a style="background-color: {{background}}; border-radius: .5rem; padding: 1rem; display: flex; justify-content: center; align-items: center; color: white !important; outline: none; text-decoration: none;" href="{{href}}">Download It Now</a><br /><br />
 
         <p>Release Note :</p><br/>
-        <p>{{release note}}</p>
+        <p style="display: flex; flex-direction:column; gap: 0.5em">{{releaseNote}}</p>
     </div>
+    <a href="privacy.html">privacy</a>
 </body>
 
 <style>

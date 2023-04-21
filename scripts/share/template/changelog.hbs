@@ -1,0 +1,7 @@
+{{#each releases}}
+    {{#if @first}}
+        {{#each commits}}
+               <p>- {{#if breaking}}**Breaking change:** {{/if}}{{subject}}{{#if href}}{{/if}}</p>
+        {{/each}}
+    {{/if}}
+{{/each}}
