@@ -10,6 +10,8 @@
     "postinstall": "patch-package",
     "changelog": "auto-changelog -p -c ./autochangelog/.changelog-config",
     "releasenote": "auto-changelog -p -c ./autochangelog/.release-note-config && auto-changelog -p -c ./autochangelog/.release-note-config-html",
+    "generate": "ts-node --project ./scripts/generator/generator.tsconfig.json ./scripts/generator/generator.mts",
+    "build": "eas build --profile preview --platform android",
     "publish": "ts-node --project ./scripts/publish/publish.tsconfig.json ./scripts/publish/publish.mts"
   },
   "dependencies": {
@@ -37,6 +39,7 @@
     "auto-changelog": "^2.4.0",
     "fs": "^0.0.1-security",
     "fs-extra": "^11.1.1",
+    "handlebars": "^4.7.7",
     "inquirer": "^9.1.5",
     "ts-node": "^10.9.1"
   },

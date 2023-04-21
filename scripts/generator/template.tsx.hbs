@@ -1,0 +1,12 @@
+import React from 'react';
+import { use{{name}}Logic } from './{{name}}.logic'
+import { {{name}}Props } from './{{name}}.props'
+import { use{{name}}Style } from './{{name}}.design'
+
+export const {{name}}: React.FC<{{name}}Props> = (props): JSX.Element => {
+  //hooks
+  const logic = use{{name}}Logic(props);
+  const design = use{{name}}Style();
+
+  return null;
+};
