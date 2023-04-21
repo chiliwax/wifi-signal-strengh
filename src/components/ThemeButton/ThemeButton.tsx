@@ -53,7 +53,7 @@ export const ThemeButton: React.FC = (): JSX.Element => {
   const toogleThemeCallback = useCallback(toogleTheme, [theme]);
 
   return (
-    <Pressable onPress={toogleThemeCallback} hitSlop={20}>
+    <Pressable onPress={toogleThemeCallback} hitSlop={{top:6, bottom:6, right:10, left: 13}}>
       <Ionicons name={icon} size={ICON_SIZE} color={design.svg.color} />
     </Pressable>
   );

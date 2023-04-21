@@ -77,7 +77,7 @@ export const useStrenghSignalStyle = () => {
       },
     },
     lottieContainer: {
-      backgroundColor: hexToRGB(colors.text, 0.1),
+      backgroundColor: hexToRGB(colors.blue, 0.2),
       overflow: 'hidden',
       borderRadius: 50,
     } as ViewStyle,

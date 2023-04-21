@@ -32,7 +32,7 @@ export const SignalStrengh: React.FC<any> = () => {
             justifyContent: 'center',
             alignItems: 'center',
             width: '100%',
-            marginTop: 60,
+            marginTop: '18%',
             position: 'absolute',
           }}
         >
@@ -113,7 +113,7 @@ export const SignalStrengh: React.FC<any> = () => {
         </Svg>
       </View>
       <View style={{ display: 'flex', flexDirection: 'row', gap: 10 }}>
-        <Pressable onPress={logic.resetAvg} hitSlop={20}>
+        <Pressable onPress={logic.resetAvg} hitSlop={10}>
           <View style={[{ display: 'flex' }, design.button, design.secondary]}>
             <Text>Reset</Text>
           </View>
@@ -212,7 +212,7 @@ export const SignalStrengh: React.FC<any> = () => {
           justifyContent: 'center',
         }}
       >
-        <Pressable onPress={() => logic.limitData(null)} hitSlop={20}>
+        <Pressable onPress={() => logic.limitData(null)} hitSlop={{left: 5, right:5, top:10, bottom: 10}}>
           <View
             style={[
               { display: 'flex' },
@@ -224,7 +224,7 @@ export const SignalStrengh: React.FC<any> = () => {
             <Text style={design.txtcenter}>All</Text>
           </View>
         </Pressable>
-        <Pressable onPress={() => logic.limitData(100)} hitSlop={0}>
+        <Pressable onPress={() => logic.limitData(100)} hitSlop={{left: 5, right:5, top:10, bottom: 10}}>
           <View
             style={[
               { display: 'flex' },
@@ -236,7 +236,7 @@ export const SignalStrengh: React.FC<any> = () => {
             <Text style={design.txtcenter}>100</Text>
           </View>
         </Pressable>
-        <Pressable onPress={() => logic.limitData(50)} hitSlop={0}>
+        <Pressable onPress={() => logic.limitData(50)} hitSlop={{left: 5, right:5, top:10, bottom: 10}}>
           <View
             style={[
               { display: 'flex' },
@@ -248,7 +248,7 @@ export const SignalStrengh: React.FC<any> = () => {
             <Text style={design.txtcenter}>50</Text>
           </View>
         </Pressable>
-        <Pressable onPress={() => logic.limitData(20)} hitSlop={0}>
+        <Pressable onPress={() => logic.limitData(20)} hitSlop={{left: 5, right:5, top:10, bottom: 10}}>
           <View
             style={[
               { display: 'flex' },
@@ -260,7 +260,7 @@ export const SignalStrengh: React.FC<any> = () => {
             <Text style={design.txtcenter}>20</Text>
           </View>
         </Pressable>
-        <Pressable onPress={() => logic.limitData(10)} hitSlop={0}>
+        <Pressable onPress={() => logic.limitData(10)} hitSlop={{left: 5, right:5, top:10, bottom: 10}}>
           <View
             style={[
               { display: 'flex' },
@@ -272,7 +272,7 @@ export const SignalStrengh: React.FC<any> = () => {
             <Text style={design.txtcenter}>10</Text>
           </View>
         </Pressable>
-        <Pressable onPress={() => logic.limitData(5)} hitSlop={0}>
+        <Pressable onPress={() => logic.limitData(5)} hitSlop={{left: 5, right:5, top:10, bottom: 10}}>
           <View
             style={[
               { display: 'flex' },

@@ -189,6 +189,8 @@ const main = async () => {
   const version = versionUpdateHandler(jsonObj, res.versionUpdate);
   publishModeHandler(res.publishMode);
   gitPushNewVersionWithTag(version);
+  exec('npm run changelog')
+  exec('npm run releasenote')
 }
 
 main();
