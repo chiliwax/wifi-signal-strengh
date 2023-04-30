@@ -1,7 +1,6 @@
 import { TextStyle } from "react-native/types";
 
 export interface TextProps {
-    style?: TextStyle;
-    children?: React.ReactNode;
-  }
-  
+  style?: TextStyle | TextStyle[];
+  children?: React.ReactNode;
+}

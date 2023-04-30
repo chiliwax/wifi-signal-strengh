@@ -10,12 +10,23 @@ import LottieAnimation from '../../../assets/142335-ship.json';
 import { PanGestureHandler } from 'react-native-gesture-handler';
 import Animated from 'react-native-reanimated';
 import ReText from '../ReText/ReText';
+import { NetInfoStateType } from '@react-native-community/netinfo';
 
 export const SignalStrengh: React.FC<any> = () => {
   const logic = useSignalStrenghLogic();
   const design = useStrenghSignalStyle();
 
   const chartHeight = useRef(0);
+
+  
+
+  if (!logic.activeConnexion) {
+    return (
+      <View style={[design.container, {justifyContent: 'center', alignItems:'center', padding: 15}]}>
+        <Text style={[design.txtcenter, {opacity: 0.5}]}>Connect your phone to your Wifi to be able to monitor it...</Text>
+      </View>
+    )
+  }
 
   return (
     <View style={design.container}>

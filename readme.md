@@ -23,6 +23,9 @@ This app allow to see the signal strengh of a wifi connexion. Its available only
 
 ## Get started
 
+create a folder `.secret` at the project root directory.
+from there add `emailList.json` & the google json file (for deploying on play console)
+
 ```sh
 npm i
 npm run postinstall

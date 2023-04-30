@@ -1,4 +1,4 @@
-import NetInfo, { useNetInfo } from '@react-native-community/netinfo';
+import NetInfo, { NetInfoStateType, useNetInfo } from '@react-native-community/netinfo';
 import {
   useCallback,
   useContext,
@@ -27,10 +27,7 @@ import TurtleLottieAnimation from '../../../assets/63541-turtle.json';
 import DirigibleLottieAnimation from '../../../assets/63381-dirigible.json';
 import { PanGestureHandlerGestureEvent } from 'react-native-gesture-handler';
 import { LineChart } from 'react-native-chart-kit';
-import { runOnJS } from 'react-native-reanimated';
 import { withDelay } from 'react-native-reanimated';
-import { cancelAnimation } from 'react-native-reanimated';
-import { Text } from '../Text/Text';
 
 const AnimatedCircle = Animated.createAnimatedComponent(Circle);
 const AnimatedTSpan = Animated.createAnimatedComponent(TSpan);
@@ -44,6 +41,7 @@ export const useSignalStrenghLogic = () => {
   const [limit, setLimit] = useState<number | null>(20);
   //hooks
   const { colors } = useContext(ThemeContext);
+  const netInfoHook = useNetInfo();
 
   const Rayon = 50;
   const strokeWidth = 10;
@@ -323,6 +321,7 @@ export const useSignalStrenghLogic = () => {
     textAvgAnimatedProps,
     textMinAnimatedProps,
     textMaxAnimatedProps,
+    activeConnexion: netInfoHook.type === NetInfoStateType.wifi,
     resetAvg,
     arrNum: limit ? ((Platform.OS === 'ios' ? arrNumMock : arrNum).slice(-limit)) : (Platform.OS === 'ios' ? arrNumMock : arrNum),
     limitData,
