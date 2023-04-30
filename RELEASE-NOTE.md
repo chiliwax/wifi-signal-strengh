@@ -1,4 +1,12 @@
-# Release Note -  current (no tags)  - 20 April 2023
+# Release Note -  current (no tags)  - 30 April 2023
+- upgrade react-native version [`885653a`](https://github.com/chiliwax/wifi-signal-strengh/commit/885653a34f9934204bc6fbf7efef118d2d33960b)
+- add no-wifi info [`2cc20d9`](https://github.com/chiliwax/wifi-signal-strengh/commit/2cc20d96a6c03acda9259d77d181e855b535c427)
+- feat: log context [`87ac0d0`](https://github.com/chiliwax/wifi-signal-strengh/commit/87ac0d0c438cd62c75d1c77afbd77b9a1c663f31)
+- feat: share [`fe17156`](https://github.com/chiliwax/wifi-signal-strengh/commit/fe17156ee12fd2a9de62588f0cc0c1e8f5932e65)
+- feat: share option [`aa0e577`](https://github.com/chiliwax/wifi-signal-strengh/commit/aa0e5777258cb735e7c4da76393d4775e966ec5f)
+- feat: adding component generator [`bf595ad`](https://github.com/chiliwax/wifi-signal-strengh/commit/bf595ad8aed0e5d4ebc486d2154a8694f8ec0da0)
+- fix: rearange button hitslop [`c10ac85`](https://github.com/chiliwax/wifi-signal-strengh/commit/c10ac85ad4e171e870a374f5ffc5a861949fb876)
+- doc: release note template [`060d7e8`](https://github.com/chiliwax/wifi-signal-strengh/commit/060d7e8c45e6ae5e9b72b2f42c928c11145d9a69)
 - feat: adding release note [`e430e3a`](https://github.com/chiliwax/wifi-signal-strengh/commit/e430e3abe75f8a2efc227b246bfa1a333c7f964f)
 - fix: update auto-changelog [`ecdddaf`](https://github.com/chiliwax/wifi-signal-strengh/commit/ecdddaffcadb42e29bbd747506c151bdf83fb780)
 - test [`a093996`](https://github.com/chiliwax/wifi-signal-strengh/commit/a09399650cb1e7531e99f170a64a78af9b6529d1)
@@ -7,3 +15,4 @@
 - doc: add post-install [`2546fd4`](https://github.com/chiliwax/wifi-signal-strengh/commit/2546fd4c933a9fedf574749387c5012c443ef4f5)
 - doc: center images [`239d91f`](https://github.com/chiliwax/wifi-signal-strengh/commit/239d91f8a1dbe93059e1baccf9214bd80d25900d)
 - doc: first [`313bb99`](https://github.com/chiliwax/wifi-signal-strengh/commit/313bb99ab53573375e89f7e5b217501af61c48e4)
+
